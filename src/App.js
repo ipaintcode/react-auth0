@@ -2,13 +2,17 @@ import React, { Component } from 'react'
 import { Route } from 'react-router-dom'
 import Home from './components/Home'
 import Profile from './components/Profile'
+import Nav from './components/Nav'
 
 class App extends Component {
   render() {
     return (
       <>
-        <Route path="/" exact component={Home} />
-        <Route path="/profile" component={Profile} />
+        <Nav />
+        <div className="body">
+          <Route path="/" exact component={Home} />
+          <Route path="/profile" component={Profile} />
+        </div>
       </>
     )
   }
