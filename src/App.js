@@ -4,6 +4,7 @@ import Home from "./components/Home"
 import Profile from "./components/Profile"
 import Nav from "./components/Nav"
 import Callback from "./components/Callback"
+import Public from "./components/Public"
 import Auth from "./Auth/Auth"
 
 class App extends Component {
@@ -35,6 +36,7 @@ class App extends Component {
               )
             }
           />
+          <Route path="/public" component={Public} />
         </div>
       </>
     )
